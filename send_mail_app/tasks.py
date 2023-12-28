@@ -5,7 +5,7 @@ from celery import shared_task
 from django.conf import settings
 
 @shared_task(bind=True)
-def send_mail_func(self):
+def send_mail_func():
     # timezone.localtime(users.date_time) + timedelta(days=2)
     # users = get_user_model().objects.all()
     # for user in users:
